@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Josefin+Sans:wght@100&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* MY GLOBAL VARIBALEs */
+:root {
+    --text-color: #000000;
+    --secondary-text-color: #333333;
+    --accent-color: #4fb3d4;
+    --accent-dark-color: #2294ed;
+    --padding-inline: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+
+}
+
+p {
+    color: var(--secondary-text-color);
+}
+
+a {
+    text-decoration: none;
+    /*removed under-lines*/
+    display: inline-block;
+}
+
+.text-bold {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1080px;
+    margin-inline: auto;
+    /*for doing in center*/
+    padding: var(--padding-inline);
+}
+
+/* top banner */
+.top-banner {
+    background-color: #4fb3d4;
+    background-size: 200px;
+    background-image: url('img/asset\ 30.png');
+}
+
+.banner-text {
+    text-align: center;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* MAIN NAV */
+.main-nav {
+    justify-content: space-around;
+}
+
+.company-logo img {
+    width: 170px;
+}
+
+.nav-links ul {
+    gap: 30px;
+}
+
+.hover-link {
+    color: var(--text-color);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 12px 22px;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-dark-color);
+    color: white;
+}
+
+.secondary-button {
+    border-radius: 5px;
+    padding: 12px 22px;
+    border: 0.5px solid var(--secondary-text-color);
+    font-weight: bold;
+
+}
+
+.secondary-button:hover {
+    border: 0.5px solid var(--accent-dark-color);
+    color: var(--accent-dark-color);
+}
+
+header {
+    padding: 50px var(--padding-inline) 0;
+}
+
+.header-left {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-right img {
+    width: 500px;
+}
+
+.getStartedbtn {
+    margin-top: 20px;
+}
+
+.company-top {
+    text-align: center;
+    font-size: 0.80rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.logos {
+    justify-content: space-between;
+    padding: 0 var(--padding-inline);
+}
+
+.logo {
+    height: 46px;
+}
+
+/* FEATURES SECTION  */
+.features-section {
+    background-image: url(img/asset\ 32.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-section-top {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.top-margin {
+    margin-block: 30px;
+}
+
+.features-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.features-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    max-width: 30%;
+}
+
+.left img {
+    width: 100%;
+}
+
+.light-color {
+    color: var(--secondary-text-color);
+}
+
+.block {
+    gap: 30px;
+    align-items: center;
+}
+
+.example-header {
+    text-align: center;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.examples-area {
+    align-items: flex-end;
+    max-width: 100%;
+    color: var(--text-color);
+}
+
+.examples-area {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.example-card {
+    width: 23%;
+    min-height: 300px;
+    position: relative;
+    border-radius: 2%;
+}
+
+.example-card:hover {
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+.card-text {
+    position: absolute;
+    color: white;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+}
+
+.cta-content {
+    background-color: #ffffff;
+    padding: 50px var(--padding-inline);
+}
+
+.cta-section {
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+/* FOOTER */
+footer {
+    background-color: #ebf2fa;
+}
+
+.box {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start
+}
+
+.company-logo {
+    width: 200px;
+
+}
+
+.footer-container {
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px var(--padding-inline);
+}
+
+.sub-footer {
+    background-color: var(--accent-color);
+    padding: var(--padding-inline);
+}
+
+.sub-footer-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hover-link-2 {
+    color: black;
+}
+
+.hover-link-2:hover {
+    color: white;
+}
