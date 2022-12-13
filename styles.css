@@ -46,7 +46,9 @@ a {
     margin-inline: auto;
     /*for doing in center*/
     padding: var(--padding-inline);
+    overflow: hidden;
 }
+
 
 /* top banner */
 .top-banner {
@@ -72,6 +74,10 @@ a {
 
 .company-logo img {
     width: 170px;
+}
+
+.toggle {
+    display: none;
 }
 
 .nav-links ul {
@@ -123,7 +129,7 @@ header {
 }
 
 .header-right img {
-    width: 500px;
+    width: 100%;
 }
 
 .getStartedbtn {
@@ -138,8 +144,10 @@ header {
 }
 
 .logos {
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 0 var(--padding-inline);
+    gap: var(--padding-inline);
 }
 
 .logo {
@@ -188,6 +196,8 @@ header {
     align-items: center;
 }
 
+/* EXAMPLES AREA */
+
 .example-header {
     text-align: center;
     flex-direction: column;
@@ -197,12 +207,13 @@ header {
 .examples-area {
     align-items: flex-end;
     max-width: 100%;
+    flex-wrap: wrap;
     color: var(--text-color);
 }
 
 .examples-area {
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 
 .example-card {
